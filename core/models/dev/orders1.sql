@@ -14,9 +14,10 @@ select
 	ord.O_SHIPPRIORITY ship_priority,
 	ord.O_COMMENT comment,
     item.L_SUPPKEY supp_id,
-    supp.S_NAME name
+    supp.S_NAME name,
+	supp.S_PHONE supp_phone
 from ord
         left outer join item on ord.O_ORDERKEY = item.L_ORDERKEY
         left outer join supp on item.L_SUPPKEY = supp.S_SUPPKEY
 )
-select * from final limit 100
+select * from final
