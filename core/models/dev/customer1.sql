@@ -17,7 +17,7 @@ SELECT
     ord.O_ORDERDATE order_date,
 	ord.O_ORDERPRIORITY order_priority
     FROM cust
-        left outer join ord on cust.C_CUSTKEY = ord.O_CUSTKEY shernik
+        left outer join ord on cust.C_CUSTKEY = ord.O_CUSTKEY
 )
 
 select * from final
