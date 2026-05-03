@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: src 
+    database: dbt_db
+    schema: src
+    tables: 
+      - name: customer
+      - name: lineitem
+      - name: nation
+      - name: orders
+      - name: part
+      - name: partsupp
+      - name: region
+      - name: supplier
